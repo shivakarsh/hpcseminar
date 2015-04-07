@@ -1,43 +1,16 @@
 #include <iostream>
 #include <vector>
+#include "Mesh.h"
+#include <cstdlib>
+
+#define tol 1E-3
 using namespace std;
-
-class Mesh
-{
-private:
-	int * values;
-	int x,y,z;
-public:
-	Mesh(int size);
-};
-
-
-class operate
-{
-private:
-	Mesh grid;
-public:
-	Mesh *central_theorem(Mesh *);
-};
-
-Mesh::Mesh(int size){
-values=new int[size];
-}
-
-
-Mesh *operate::central_theorem(Mesh *mymesh){
-
-
-}
-
-
-
 
 
 
 int main(){
-
-Mesh(100);
-
+Mesh grid(50,50,50);
+grid.fill(10.0);
+while(abs((long)(grid.Central_diff()-grid.Central_diff()))>1E-4){}
 }
 
