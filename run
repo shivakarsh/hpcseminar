@@ -1,0 +1,3 @@
+gfortran -pg -c -fpic -ffree-form fort.f90 -o libfort.a -O0
+g++ -pg main.cpp libfort.a -lgfortran
+time ./a.out
