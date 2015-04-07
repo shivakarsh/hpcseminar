@@ -1,3 +1,5 @@
-HPCSeminar test
+HPCSeminar 2015 Spring Series
+#Problems in optimization
 
-+ Central theorem - Optimization problem
++ Central theorem - Averaging/Optimization problem
+
